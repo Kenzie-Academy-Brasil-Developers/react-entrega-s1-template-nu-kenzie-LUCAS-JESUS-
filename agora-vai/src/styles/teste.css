@@ -1,0 +1,16 @@
+.total-money {
+  font-size: 1.5em;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.total-money.green {
+  background-color: #00e676;
+  color: white;
+}
+
+.total-money.gray {
+  background-color: #bdbdbd;
+  color: white;
+}
