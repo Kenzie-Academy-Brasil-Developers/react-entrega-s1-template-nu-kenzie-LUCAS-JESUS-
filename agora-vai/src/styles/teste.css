@@ -1,16 +1,21 @@
-.total-money {
-  font-size: 1.5em;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
 
 .total-money.green {
-  background-color: #00e676;
-  color: white;
+  border-left: 5px solid  rgba(3, 184, 152, 1); 
+  border-radius: 4px 0px 0px 4px;
 }
 
 .total-money.gray {
-  background-color: #bdbdbd;
-  color: white;
+  border-left: 5px solid red; 
+  border-radius: 4px 0px 0px 4px;
+}
+
+.card.green{
+  border-left: 5px solid  rgba(3, 184, 152, 1);
+  border-radius: 4px 0px 0px 4px; 
+}
+
+.card.gray{
+  border-left: 5px solid red; 
+  border-radius: 4px 0px 0px 4px;
+
 }
