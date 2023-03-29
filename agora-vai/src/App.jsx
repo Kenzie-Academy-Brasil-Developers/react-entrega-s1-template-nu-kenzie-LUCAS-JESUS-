@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import List from './componentes/List';
 import Form from './componentes/props';
-import TotalMoney from './componentes/totalMoney';
 import './styles/App.css';
 import './styles/teste.css';
 
@@ -22,7 +21,7 @@ function App() {
 
       {/* Adicionando o nome na div que engloba o card container */}
       <section className="div-Principal">
-        <div className="card-container">
+        <div className="container-Secao-App">
 
           <div className='conttainer-De-Dados-do-Usuario'>
             <Form listTransactions={listTransactions} setListTransactions={setListTransactions} />

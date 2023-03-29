@@ -1,21 +1,11 @@
-
 import Card from "./card";
+
 function List(props) {
-  // Função para deletar uma transação da lista
-  function handleDeleteTransaction(index) {
-    // Filtrando a lista de transações para remover a transação com o índice dado
-    const newListTransactions = props.listTransactions.filter((transaction, transactionIndex) => {
-      return transactionIndex !== index;
-    });
-
-    // Chamando a função de atualização da lista de transações com a nova lista
-    props.setListTransactions(newListTransactions);
-  }
-
-  // Renderização da lista de transações
   return (
     <section className="container-Principal-Da-Lista">
-      <h2>Resumo Financeiro</h2>
+      <h2 className="h2-list-Titulo">Resumo Financeiro</h2>
+      {getTransactionList()}
+
       <div className='card-container'>
         {/* Mapeando a lista de transações para gerar um componente Card para cada transação */}
         {props.listTransactions.map((transaction, index) => (
@@ -29,6 +19,25 @@ function List(props) {
       </div>
     </section>
   );
+
+  function getTransactionList() {
+    if (props.listTransactions.length === 0) {
+      return <h3 className="list-H3-Para-Nenhuma-Transacao">Você ainda não possui nenhum lançamento</h3>;
+    } else {
+      return null;
+    }
+  }
+
+  // Função para deletar uma transação da lista
+  function handleDeleteTransaction(index) {
+    // Filtrando a lista de transações para remover a transação com o índice dado
+    const newListTransactions = props.listTransactions.filter((transaction, transactionIndex) => {
+      return transactionIndex !== index;
+    });
+
+    // Chamando a função de atualização da lista de transações com a nova lista
+    props.setListTransactions(newListTransactions);
+  }
 }
 
 export default List;

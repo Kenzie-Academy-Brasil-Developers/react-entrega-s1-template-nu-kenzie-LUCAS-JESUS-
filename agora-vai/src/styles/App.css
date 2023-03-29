@@ -2,86 +2,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Estilos para telas maiores que 768px */
+
 @media screen and (min-width: 768px) {
 
-  /* Estilo para o header */
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    margin-top: 2rem;
   }
 
-  /* Estilo para o logo */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+  #value{
+    width: 19rem;
   }
 
-  /* Estilo para a seção principal */
+  .for-Principal {
+    gap: 9px;
+    display: flex;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    width: 22rem;
+    height: 25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+  }
+
+  .Descrição {
+    margin-left: 2rem;
+    margin-top: 2rem
+  }
+
+  #name {
+    margin-left: 2rem;
+  }
+
+  p {
+    margin-left: 2rem;
+  }
+
+  .container-Para-Valores {
+    margin-left: 2rem;
+  }
+
+  .dropdown-Content-Titulo {
+    margin-left: 2rem;
+  }
+
+  #type {
+    margin-left: 2rem;
+  }
+
+  .inserir {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .total-money {
+    margin-top: 2rem;
+    gap: 7px;
+    display: flex;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+
   .div-Principal {
-    max-width: 1200px;
+    margin-top: 3rem;
+  }
+
+  .App {
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 100px;
+    box-sizing: border-box;
+    height: 40rem;
+  }
+
+  .container-de-dados-do-usuario {
+    width: 593px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
   }
 
-  /* Estilo para o título da seção principal */
-  .div-Principal h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
+  .card.green {
+    width: 36rem;
+    display: flex;
+    border-left: 5px solid rgba(3, 184, 152, 1);
+    border-radius: 4px 0px 0px 4px;
+    margin-top: 22px;
+    margin-bottom: 14px;
+    flex-direction: row;
+    gap: 12rem;
+    align-items: center;
+    height: 87px;
   }
 
-  /* Estilo para o container do formulário e do totalMoney */
-  .conttainer-De-Dados-do-Usuario {
-    flex: 0 0 calc(50% - 1rem);
-    margin-right: 2rem;
+  .card.gray {
+    width: 36rem;
+    border-left: 2px solid gray;
+    border-radius: 4px 0px 0px 4px;
+    margin-top: 22px;
+    margin-bottom: 14px;
+    flex-direction: row;
+    gap: 12rem;
+    align-items: center;
+    height: 87px;
+    display: flex;
   }
 
-  /* Estilo para a lista de transações */
-  .card-container {
-    flex: 0 0 calc(50% - 1rem);
+  .container-Card-Valor-Deletor {
+    align-items: center;
+    width: 9rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
   }
 
-  /* Estilo para os botões */
-  .button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #333;
-    color: #FFF;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  .container-Secao-App {
+    display: flex;
+    height: 35.4rem;
+    gap: 8rem;
+    width: 64rem;
   }
 
-  /* Estilo para o efeito hover nos botões */
-  .button:hover {
-    background-color: #b11f1f;
+  .total-money.green {
+    border-left: 1px solid rgba(3, 184, 152, 1);
+    border-radius: 4px 0px 0px 4px;
+    width: 22rem;
+
+  }
+
+  .card-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+  }
+
+  .container-Principal-Da-Lista {
+    width: 30rem;
+    height: 30rem;
   }
 }
 
 /* Estilos para telas menores que 768px */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
 
-  /* Estilo para o header */
   header {
     display: flex;
     justify-content: space-between;
@@ -111,15 +179,46 @@
     justify-content: center;
   }
 
+  #value {
+    width: 14rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 10px;
+    background: #F8F9FA;
+    border: 1px solid #af7f7f;
+    border-radius: 8px;
+    height: 19.6rem;
+  }
+
+  .inserir {
+    width: 14rem;
+  }
+  .card-Botão-Deletor:hover {
+    border-radius: 2px;
+    background: #000;
+    cursor: pointer;
+    color: #E9ECEF;
+  }
+  
+  .card-Botão-Deletor:active {
+    background: #444;
+    color: #E9ECEF;
+  }
+  
 }
+
 
 form {
   box-sizing: border-box;
-  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 250px;
   height: 290px;
 }
+
+
 
 #name {
   height: 25px;
@@ -146,8 +245,8 @@ form {
   background-color: #FD377E;
   border: 2px solid #FD377E;
   border-radius: 8px;
-  height: 47px;
-  width: 241px;
+  height: 3rem;
+  width: 15rem;
   color: #FFFFFF;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -200,6 +299,7 @@ form h1 {
 }
 
 #value {
+  width: 15rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -209,19 +309,19 @@ form h1 {
   background: #F8F9FA;
   border: 1px solid #af7f7f;
   border-radius: 8px;
-  height: 314px;
+  height: 19.60rem;
 }
 
 .container-Resultado-Final {
-  height: 45px;
+  height: 2rem;
   box-sizing: border-box;
-  background: #FFFFFF;
   border: 1px solid #E9ECEF;
   border-radius: 4px;
   display: flex;
-  gap: 35px;
-  width: 228px;
+  gap: 68px;
+  width: 21rem;
   align-items: center;
+  margin-left: 8px;
 }
 
 .resultado-Final {
@@ -243,14 +343,23 @@ form h1 {
   color: #FD377E;
 }
 
+.inserir:hover {
+  background-color: #E34981;
+  border: 2px solid #E34981;
+  border-radius: 8px;
+
+}
 
 .referencia-Do-Valor-Total-Money {
+  width: 9.2rem;
+  display: flex;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
-  color: #343A40
+  color: #343A40;
+  flex-direction: row-reverse;
 }
 
 
@@ -260,4 +369,115 @@ form h1 {
   height: 114px;
   display: flex;
   flex-direction: column;
+}
+
+
+.h2-list-Titulo {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}
+
+
+.list-H3-Para-Nenhuma-Transacao {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #343A40;
+}
+
+.card-Nome-Do-Objeto {
+  margin-left: 8px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+  width: 13rem;
+}
+
+.card-Tipo-De-Entrada {
+  margin-left: 12px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #343A40;
+}
+
+.card-Valor-Do-Objeto {
+  margin-left: 12px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
+  margin-top: 8px;
+}
+
+.card-Botão-Deletor {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #212529;
+}
+
+
+.card-Botão-Deletor {
+  margin-left: 20px;
+  width: 49px;
+  height: 19px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+
+.card-Botão-Deletor:hover {
+  border-radius: 2px;
+  background: #000;
+  cursor: pointer;
+  color: #E9ECEF;
+}
+
+.card-Botão-Deletor:active {
+  background: #444;
+  color: #E9ECEF;
+}
+
+
+.dropdown-Content-Titulo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #212529;
+}
+
+#type {
+  width: 15rem;
+  border: 2px solid #F8F9FA;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #343A40;
+}
+
+#type:hover {
+  border: 2px solid #212529;
+  border-radius: 8px;
 }
