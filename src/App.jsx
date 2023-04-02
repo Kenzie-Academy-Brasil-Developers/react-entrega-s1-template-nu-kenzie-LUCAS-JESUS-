@@ -1,7 +1,8 @@
 
 import { useState } from 'react';
-import List from './componentes/List';
-import Form from './componentes/props';
+import Form from './componentes/Form/Form';
+import List from './componentes/Lista/List';
+import img from './assets/logo.svg';
 import './styles/App.css';
 import './styles/teste.css';
 
@@ -10,16 +11,15 @@ function App() {
 
   return (
     <section className="App">
-      {/* Adicionando o header */}
+    
       <header>
         <nav>
           <div className="logo">
-            <img src="./src/img/Nu Kenzie.png" alt="" />
+          <img src={img} alt="" />
           </div>
         </nav>
       </header>
 
-      {/* Adicionando o nome na div que engloba o card container */}
       <section className="div-Principal">
         <div className="container-Secao-App">
 

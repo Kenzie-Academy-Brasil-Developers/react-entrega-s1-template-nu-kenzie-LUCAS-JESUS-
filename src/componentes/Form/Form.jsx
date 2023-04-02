@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import TotalMoney from './totalMoney';
+import TotalMoney from '../TotalMoney/TotalMoney';
 
 function Form(props) {
   const [showTotalMoney, setShowTotalMoney] = useState(false);
@@ -48,7 +48,7 @@ function Form(props) {
         <div className="dropdown-content">
           <label htmlFor='type' className='dropdown-Content-Titulo'>Tipo de valor:</label>
           <select id='type' value={transactionType} onChange={(event) => handleSelectType(event.target.value)}>
-            <option value="Entrada"></option>
+            <option value="Opções"></option>
             <option value='entrada'>Entrada</option>
             <option value='saida'>Saída</option>
           </select>

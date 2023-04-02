@@ -1,61 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fruktur&family=Inter:wght@400;500&family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* Estilos para telas maiores que 768px */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
   header {
 
     margin-top: 2rem;
   }
 
-  #value{
-    width: 19rem;
-  }
-
-  .for-Principal {
-    gap: 9px;
-    display: flex;
-    margin-top: 2rem;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    width: 22rem;
-    height: 25rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    flex-direction: column;
-  }
-
-  .Descrição {
-    margin-left: 2rem;
-    margin-top: 2rem
-  }
-
-  #name {
-    margin-left: 2rem;
-  }
-
-  p {
-    margin-left: 2rem;
-  }
-
-  .container-Para-Valores {
-    margin-left: 2rem;
-  }
-
-  .dropdown-Content-Titulo {
-    margin-left: 2rem;
-  }
-
-  #type {
-    margin-left: 2rem;
-  }
-
-  .inserir {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    padding: 1rem;
-  }
 
   .total-money {
     margin-top: 2rem;
@@ -88,10 +41,11 @@
   }
 
   .card.green {
-    width: 36rem;
+    width: 560px;
     display: flex;
     border-left: 5px solid rgba(3, 184, 152, 1);
-    border-radius: 4px 0px 0px 4px;
+    background: #F8F9FA;
+    border-radius: 4px;
     margin-top: 22px;
     margin-bottom: 14px;
     flex-direction: row;
@@ -101,9 +55,9 @@
   }
 
   .card.gray {
-    width: 36rem;
-    border-left: 2px solid gray;
-    border-radius: 4px 0px 0px 4px;
+    background: #F8F9FA;
+    width: 560px;
+    border-radius: 4px;
     margin-top: 22px;
     margin-bottom: 14px;
     flex-direction: row;
@@ -128,10 +82,15 @@
   }
 
   .total-money.green {
-    border-left: 1px solid rgba(3, 184, 152, 1);
-    border-radius: 4px 0px 0px 4px;
-    width: 22rem;
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+  }
 
+  .total-money.gray {
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
   }
 
   .card-container {
@@ -141,25 +100,372 @@
 
   }
 
+  .card-Container-Objeto-Entrada {
+    margin-left: 14px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container-Card-Valor-Deletor {
+    height: 57px;
+    display: flex;
+    justify-content: space-around;
+  }
+
   .container-Principal-Da-Lista {
     width: 30rem;
     height: 30rem;
   }
+
+  .card-Botão-Deletor:hover {
+    border-radius: 2px;
+    background: #000;
+    cursor: pointer;
+    color: #E9ECEF;
+  }
+
+  .card-Botão-Deletor:active {
+    background: #444;
+    color: #E9ECEF;
+  }
+
+  .for-Principal {
+    box-sizing: border-box;
+    width: 355px;
+    height: 434px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+
+  #name {
+    margin-top: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+    width: 314px;
+    height: 52.8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #F8F9FA;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    margin-left: 14px;
+  }
+
+  .inserir {
+    margin-left: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FD377E;
+    border: 2px solid #FD377E;
+    border-radius: 8px;
+    height: 48px;
+    width: 314px;
+    max-width: 90%;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .Descrição {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 23px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: #868E96;
+    width: 126px;
+    height: 20px;
+    margin-left: 11px;
+  }
+
+  .for-Valor {
+    width: 57px;
+    height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 20px;
+  }
+
+  .container-Para-Valores {
+    max-width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1px;
+
+  }
+
+  form h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+  }
+
+  #value {
+    max-width: 100%;
+    width: 314px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 10px;
+    background: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    border-radius: 8px;
+    height: 48px;
+    margin-left: 14px;
+  }
+
+  .container-Resultado-Final {
+    height: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    display: flex;
+    gap: 68px;
+    width: 21rem;
+    align-items: center;
+    margin-left: 8px;
+  }
+
+  .resultado-Final {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+  }
+
+
+  .total-Money-Quantidade {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FD377E;
+  }
+
+  .inserir:hover {
+    background-color: #E34981;
+    border: 2px solid #E34981;
+    border-radius: 8px;
+
+  }
+
+  .referencia-Do-Valor-Total-Money {
+    width: 9.2rem;
+    display: flex;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+    flex-direction: row-reverse;
+  }
+
+
+  .dropdown-content {
+    gap: 11px;
+    margin-top: 19px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+  .h2-list-Titulo {
+    margin-top: -7px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+  }
+
+
+  .list-H3-Para-Nenhuma-Transacao {
+    width: 440px;
+    height: 34px;
+    max-width: 95%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #343A40;
+  }
+
+  .card-Nome-Do-Objeto {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+    width: 13rem;
+  }
+
+  .card-Tipo-De-Entrada {
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+  }
+
+  .card-Valor-Do-Objeto {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-top: 8px;
+  }
+
+  .card-Botão-Deletor {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #212529;
+  }
+
+
+  .dropdown-Content-Titulo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 14px;
+  }
+
+  #type {
+    margin-left: 17px;
+    width: 313px;
+    max-width: 90%;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #F8F9FA;
+    border-radius: 8px;
+
+  }
+
+  #type::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #343A40;
+  }
+
+  #type:hover {
+    border: 2px solid #212529;
+    border-radius: 8px;
+  }
 }
 
-/* Estilos para telas menores que 768px */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 320px) {
+  .for-Principal {
+    margin-left: 96px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 355px;
+    max-width: 54%;
+    height: 434px;
+  }
+
+  .logo {
+    margin-left: 22px;
+  }
+
+  .value {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #name {
+    max-width: 90%;
+    width: 314px;
+    box-sizing: border-box;
+    height: 52.8px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #F8F9FA;
+
+  }
+
+  ::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #868E96;
+    width: 190px;
+    height: 26px;
+  }
+
 
   header {
+    width: 390px;
+    height: 69px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #FFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Estilo para o logo */
   .logo {
     display: flex;
     align-items: center;
@@ -168,9 +474,9 @@
     color: #333;
   }
 
-  /* Estilo para a seção principal */
+
   .div-Principal {
-    max-width: 100%;
+    max-width: 50%;
     margin: 0;
     padding: 1rem;
     display: flex;
@@ -179,8 +485,212 @@
     justify-content: center;
   }
 
-  #value {
+
+  .for-Principal {
+    margin-left: 176px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 355px;
+    max-width: 56%;
+    height: 434px;
+  }
+
+  .container-Principal-Da-Lista {
+    margin-left: 181px;
+  }
+
+  .card.green {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    width: 351px;
+    max-width: 90%;
+    height: 156px;
+    border-radius: 4px;
+  }
+
+  .card.gray {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    height: 156px;
+    width: 351px;
+    max-width: 90%;
+    border-radius: 4px;
+  }
+
+  .total-money.green {
+    margin-left: 179px;
+    width: 355px;
+    max-width: 90%;
+    height: 96px;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+  }
+
+  .total-money.gray {
+    margin-left: 188px;
+    width: 355px;
+    max-width: 95%;
+    height: 96px;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+  }
+
+  .card-Nome-Do-Objeto {
+    margin-left: 15px;
+    margin-top: 8px;
+  }
+
+  .card-Tipo-De-Entrada {
+    margin-left: 14px;
+    margin-top: 9px;
+  }
+
+  .container-Card-Valor-Deletor {
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+
+  .card-Botão-Deletor {
+    margin-left: 8px;
+    margin-top: 13px;
+  }
+
+  .card-Botão-Deletor:hover {
+    background-color: #f73333;
+    color: #000000;
+  }
+
+  .inserir {
     width: 14rem;
+  }
+
+  .card-Botão-Deletor:hover {
+    border-radius: 2px;
+    background: #000;
+    cursor: pointer;
+    color: #E9ECEF;
+  }
+
+  .card-Botão-Deletor:active {
+    background: #444;
+    color: #E9ECEF;
+  }
+
+
+
+
+  form {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 290px;
+  }
+
+
+
+  #name {
+    max-width: 90%;
+    box-sizing: border-box;
+    width: 314px;
+    height: 52.8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #F8F9FA;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    margin-left: 14px;
+  }
+
+  #name:hover {
+    border: 2px solid #212529;
+    border-radius: 8px;
+  }
+
+  .inserir {
+    margin-left: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FD377E;
+    border: 2px solid #FD377E;
+    border-radius: 8px;
+    height: 48px;
+    width: 314px;
+    max-width: 90%;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .Descrição {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 23px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: #868E96;
+    width: 126px;
+    height: 20px;
+    margin-left: 11px;
+  }
+
+  .for-Valor {
+    width: 57px;
+    height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 20px;
+  }
+
+  .container-Para-Valores {
+    max-width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+  form h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+  }
+
+  #value {
+    max-width: 90%;
+    width: 314px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -188,296 +698,178 @@
     padding: 0px 16px;
     gap: 10px;
     background: #F8F9FA;
-    border: 1px solid #af7f7f;
+    border: 2px solid #F8F9FA;
     border-radius: 8px;
-    height: 19.6rem;
+    height: 48px;
+    margin-left: 14px;
   }
 
-  .inserir {
-    width: 14rem;
+  #value::before {
+    border: 2px solid #212529;
+    border-radius: 8px;
   }
-  .card-Botão-Deletor:hover {
-    border-radius: 2px;
-    background: #000;
-    cursor: pointer;
-    color: #E9ECEF;
+
+  #value::after {
+    border: 2px solid #212529;
+    border-radius: 8px;
   }
-  
-  .card-Botão-Deletor:active {
-    background: #444;
-    color: #E9ECEF;
+
+  .container-Resultado-Final {
+    height: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    display: flex;
+    gap: 68px;
+    width: 17rem;
+    align-items: center;
+    margin-left: 8px;
   }
-  
-}
+
+  .resultado-Final {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+  }
 
 
-form {
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 250px;
-  height: 290px;
-}
+  .total-Money-Quantidade {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FD377E;
+  }
+
+  .inserir:hover {
+    background-color: #E34981;
+    border: 2px solid #E34981;
+    border-radius: 8px;
+
+  }
+
+  .referencia-Do-Valor-Total-Money {
+    width: 9.2rem;
+    display: flex;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+    flex-direction: row-reverse;
+  }
 
 
-
-#name {
-  height: 25px;
-  display: flex;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  border: 2px solid #F8F9FA;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 26px;
-
-}
-
-.inserir {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #FD377E;
-  border: 2px solid #FD377E;
-  border-radius: 8px;
-  height: 3rem;
-  width: 15rem;
-  color: #FFFFFF;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.Descrição {
-  margin-bottom: 15px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-}
-
-p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  color: #868E96;
-}
-
-.for-Valor {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #212529
-}
-
-.container-Para-Valores {
-  height: 45px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-form h1 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #212529;
-}
-
-#value {
-  width: 15rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 10px;
-  background: #F8F9FA;
-  border: 1px solid #af7f7f;
-  border-radius: 8px;
-  height: 19.60rem;
-}
-
-.container-Resultado-Final {
-  height: 2rem;
-  box-sizing: border-box;
-  border: 1px solid #E9ECEF;
-  border-radius: 4px;
-  display: flex;
-  gap: 68px;
-  width: 21rem;
-  align-items: center;
-  margin-left: 8px;
-}
-
-.resultado-Final {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #212529;
-}
+  .dropdown-content {
+    gap: 11px;
+    margin-top: 19px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
 
-.total-Money-Quantidade {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #FD377E;
-}
+  .h2-list-Titulo {
+    margin-top: 28px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+  }
 
-.inserir:hover {
-  background-color: #E34981;
-  border: 2px solid #E34981;
-  border-radius: 8px;
+  .list-H3-Para-Nenhuma-Transacao {
+    width: 336px;
+    height: 68px;
+    max-width: 89%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #343A40;
+  }
 
-}
+  .card-Nome-Do-Objeto {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+    width: 13rem;
+  }
 
-.referencia-Do-Valor-Total-Money {
-  width: 9.2rem;
-  display: flex;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #343A40;
-  flex-direction: row-reverse;
-}
+  .card-Tipo-De-Entrada {
 
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+  }
 
-.dropdown-content {
-  gap: 11px;
-  margin-top: 19px;
-  height: 114px;
-  display: flex;
-  flex-direction: column;
-}
+  .card-Valor-Do-Objeto {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-top: 8px;
+  }
 
-
-.h2-list-Titulo {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #212529;
-}
-
-
-.list-H3-Para-Nenhuma-Transacao {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 34px;
-  color: #343A40;
-}
-
-.card-Nome-Do-Objeto {
-  margin-left: 8px;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #212529;
-  width: 13rem;
-}
-
-.card-Tipo-De-Entrada {
-  margin-left: 12px;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #343A40;
-}
-
-.card-Valor-Do-Objeto {
-  margin-left: 12px;
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #212529;
-  margin-top: 8px;
-}
-
-.card-Botão-Deletor {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 14px;
-  color: #212529;
-}
+  .card-Botão-Deletor {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #212529;
+  }
 
 
-.card-Botão-Deletor {
-  margin-left: 20px;
-  width: 49px;
-  height: 19px;
-  background: #ffffff;
-  border-radius: 3px;
-  margin-top: 5px;
-}
+  .dropdown-Content-Titulo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    margin-left: 14px;
+  }
 
+  #type {
+    margin-left: 14px;
+    width: 313px;
+    max-width: 90%;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #F8F9FA;
+    border-radius: 8px;
 
-.card-Botão-Deletor:hover {
-  border-radius: 2px;
-  background: #000;
-  cursor: pointer;
-  color: #E9ECEF;
-}
+  }
 
-.card-Botão-Deletor:active {
-  background: #444;
-  color: #E9ECEF;
-}
+  #type::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #343A40;
+  }
 
+  #type:hover {
+    border: 2px solid #212529;
+    border-radius: 8px;
+  }
 
-.dropdown-Content-Titulo {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
-  color: #212529;
-}
-
-#type {
-  width: 15rem;
-  border: 2px solid #F8F9FA;
-  border-radius: 8px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 26px;
-  color: #343A40;
-}
-
-#type:hover {
-  border: 2px solid #212529;
-  border-radius: 8px;
 }

@@ -1,4 +1,4 @@
-import Card from "./card";
+import Card from "../Card.jsx/Card";
 
 function List(props) {
   return (
@@ -7,13 +7,12 @@ function List(props) {
       {getTransactionList()}
 
       <div className='card-container'>
-        {/* Mapeando a lista de transações para gerar um componente Card para cada transação */}
         {props.listTransactions.map((transaction, index) => (
           <Card
             transaction={transaction}
-            key={index} // Usando o índice como chave, pois não temos um ID único para cada transação
+            key={index} 
             index={index}
-            deleteTransaction={handleDeleteTransaction} // Passando a função de deletar para o componente Card
+            deleteTransaction={handleDeleteTransaction} 
           />
         ))}
       </div>
@@ -28,14 +27,11 @@ function List(props) {
     }
   }
 
-  // Função para deletar uma transação da lista
   function handleDeleteTransaction(index) {
-    // Filtrando a lista de transações para remover a transação com o índice dado
     const newListTransactions = props.listTransactions.filter((transaction, transactionIndex) => {
       return transactionIndex !== index;
     });
 
-    // Chamando a função de atualização da lista de transações com a nova lista
     props.setListTransactions(newListTransactions);
   }
 }
