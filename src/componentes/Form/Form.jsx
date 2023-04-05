@@ -20,7 +20,7 @@ function Form(props) {
       const newListTransactions = prevState.concat(newTransaction);
       return newListTransactions;
     });
-    
+
     nameInput.value = '';
     valueInput.value = '';
     setTransactionType('');
@@ -48,12 +48,13 @@ function Form(props) {
         <div className="dropdown-content">
           <label htmlFor='type' className='dropdown-Content-Titulo'>Tipo de valor:</label>
           <select id='type' value={transactionType} onChange={(event) => handleSelectType(event.target.value)}>
-            <option value="Opções"></option>
+            <option hidden value="">Selecione</option>
             <option value='entrada'>Entrada</option>
             <option value='saida'>Saída</option>
           </select>
           <button type='submit' className='inserir' disabled={isInsertButtonDisabled}>Inserir valor</button>
         </div>
+
 
       </form>
 

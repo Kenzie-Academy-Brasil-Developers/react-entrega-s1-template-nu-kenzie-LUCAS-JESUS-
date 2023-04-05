@@ -11,13 +11,11 @@ function App() {
 
   return (
     <section className="App">
-    
+
       <header>
-        <nav>
-          <div className="logo">
-          <img src={img} alt="" />
-          </div>
-        </nav>
+
+        <img src={img} alt="" />
+
       </header>
 
       <section className="div-Principal">

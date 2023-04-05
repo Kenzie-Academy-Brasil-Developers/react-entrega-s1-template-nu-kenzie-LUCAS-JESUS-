@@ -5,7 +5,8 @@
 @media screen and (min-width: 769px) {
 
   header {
-
+    background: #F8F9FA;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
     margin-top: 2rem;
   }
 
